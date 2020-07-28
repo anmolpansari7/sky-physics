@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sky Physics</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="blobs">
+        <div class="purple_blob">
+          <img
+            src="./images/purpleblob.svg"
+            alt="top-left-background"
+            srcset=""
+          />
+        </div>
+        <div class="pink_blob">
+          <img
+            src="./images/pinkblob.svg"
+            alt="top-right-background"
+            srcset=""
+          />
+        </div>
+      </div>
+      <div class="links_section">
+        <div class="logo">
+          <img src="./images/sky_physics_logo.svg" alt="logo_svg" />
+        </div>
+        <div class="navlinks">
+          <div><a class="navlink" href="#">Home</a></div>
+          <div><a class="navlink" href="#">Exams</a></div>
+          <div><a class="navlink" href="#">Add Ques.</a></div>
+          <div class="person_after_login">
+            <img src="./images/person.svg" alt="person_img" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="background">
+      <img
+        class="magnet magnet_after"
+        src="./images/Magnet.svg"
+        alt="magnet_background_image"
+      />
+      <img
+        class="pulley pulley_after"
+        src="./images/pulley.svg"
+        alt="pulley_background_image"
+      />
+      <img
+        class="emc2 emc2_after"
+        src="./images/E = mc2.svg"
+        alt="E = mc2_background_image"
+      />
+      <img
+        class="einstein einstein_after"
+        src="./images/Ienstein.svg"
+        alt="Ienstein_background_image"
+      />
+      <img
+        class="incline_plane incline_plane_after"
+        src="./images/inclined Plane.svg"
+        alt="inclined_plane_background_image"
+      />
+    </div>
+
+    <div class="report_card_outer_container">
+      <h1>Score Card</h1>
+      <div class="report_card_inner_container">
+        <div class="student_details_and_graph">
+          <div class="student_details">
+            <div class="column_1">
+              <div class="horizontal_headings">
+                <p>Name</p>
+                <p>Topic</p>
+                <p>Date</p>
+              </div>
+              <div class="horizontal_details">
+                <p>Anmol Pansari</p>
+                <p>Semi Conductor</p>
+                <p>24-06-2020</p>
+              </div>
+            </div>
+            <div class="column_2">
+              <div class="horizontal_headings">
+                <p>Correct</p>
+                <p>Marks</p>
+                <p>Rank</p>
+              </div>
+              <div class="horizontal_details">
+                <p>25</p>
+                <p>100</p>
+                <p>1</p>
+              </div>
+            </div>
+          </div>
+          <div class="graph"></div>
+          <div class="graph_details">
+            <p>Graph: Your Performance V/S Class Performance</p>
+          </div>
+        </div>
+        <div class="answer_list">
+          <div class="result">
+            <div class="question_s_no"><p>1</p></div>
+            <div class="wrong_or_correct">
+              <img src="./images/right.svg" alt="right" />
+            </div>
+          </div>
+          <div class="result">
+            <div class="question_s_no"><p>2</p></div>
+            <div class="wrong_or_correct">
+              <img src="./images/right.svg" alt="right" />
+            </div>
+          </div>
+          <div class="result">
+            <div class="question_s_no"><p>3</p></div>
+            <div class="wrong_or_correct">
+              <img src="./images/right.svg" alt="right" />
+            </div>
+          </div>
+          <div class="result">
+            <div class="question_s_no"><p>4</p></div>
+            <div class="wrong_or_correct">
+              <img src="./images/right.svg" alt="right" />
+            </div>
+          </div>
+          <div class="result">
+            <div class="question_s_no"><p>5</p></div>
+            <div class="wrong_or_correct">
+              <img src="./images/right.svg" alt="right" />
+            </div>
+          </div>
+          <div class="result">
+            <div class="question_s_no"><p>6</p></div>
+            <div class="wrong_or_correct">
+              <img src="./images/wrong.svg" alt="right" />
+            </div>
+          </div>
+          <div class="result">
+            <div class="question_s_no"><p>7</p></div>
+            <div class="wrong_or_correct">
+              <img src="./images/wrong.svg" alt="right" />
+            </div>
+          </div>
+          <div class="result">
+            <div class="question_s_no"><p>8</p></div>
+            <div class="wrong_or_correct">
+              <img src="./images/right.svg" alt="right" />
+            </div>
+          </div>
+          <div class="result">
+            <div class="question_s_no"><p>9</p></div>
+            <div class="wrong_or_correct">
+              <img src="./images/wrong.svg" alt="right" />
+            </div>
+          </div>
+          <div class="result">
+            <div class="question_s_no"><p>10</p></div>
+            <div class="wrong_or_correct">
+              <img src="./images/right.svg" alt="right" />
+            </div>
+          </div>
+          <div class="result">
+            <div class="question_s_no"><p>11</p></div>
+            <div class="wrong_or_correct">
+              <img src="./images/right.svg" alt="right" />
+            </div>
+          </div>
+          <div class="result">
+            <div class="question_s_no"><p>12</p></div>
+            <div class="wrong_or_correct">
+              <img src="./images/right.svg" alt="right" />
+            </div>
+          </div>
+          <div class="result">
+            <div class="question_s_no"><p>13</p></div>
+            <div class="wrong_or_correct">
+              <img src="./images/right.svg" alt="right" />
+            </div>
+          </div>
+          <div class="result">
+            <div class="question_s_no"><p>14</p></div>
+            <div class="wrong_or_correct">
+              <img src="./images/right.svg" alt="right" />
+            </div>
+          </div>
+          <div class="result">
+            <div class="question_s_no"><p>15</p></div>
+            <div class="wrong_or_correct">
+              <img src="./images/right.svg" alt="right" />
+            </div>
+          </div>
+          <div class="result">
+            <div class="question_s_no"><p>16</p></div>
+            <div class="wrong_or_correct">
+              <img src="./images/right.svg" alt="right" />
+            </div>
+          </div>
+          <div class="result">
+            <div class="question_s_no"><p>17</p></div>
+            <div class="wrong_or_correct">
+              <img src="./images/right.svg" alt="right" />
+            </div>
+          </div>
+          <div class="result">
+            <div class="question_s_no"><p>18</p></div>
+            <div class="wrong_or_correct">
+              <img src="./images/wrong.svg" alt="right" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sky Physics</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="blobs">
+        <div class="purple_blob">
+          <img
+            src="./images/purpleblob.svg"
+            alt="top-left-background"
+            srcset=""
+          />
+        </div>
+        <div class="pink_blob">
+          <img
+            src="./images/pinkblob.svg"
+            alt="top-right-background"
+            srcset=""
+          />
+        </div>
+      </div>
+      <div class="links_section">
+        <div class="logo">
+          <img src="./images/sky_physics_logo.svg" alt="logo_svg" />
+        </div>
+        <div class="navlinks">
+          <div><a class="navlink" href="#">Home</a></div>
+          <div><a class="navlink" href="#">Exams</a></div>
+          <div><a class="navlink" href="#">Add Ques.</a></div>
+          <div class="person_after_login">
+            <img src="./images/person.svg" alt="person_img" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="background">
+      <img
+        class="magnet magnet_after"
+        src="./images/Magnet.svg"
+        alt="magnet_background_image"
+      />
+      <img
+        class="pulley pulley_after"
+        src="./images/pulley.svg"
+        alt="pulley_background_image"
+      />
+      <img
+        class="emc2 emc2_after"
+        src="./images/E = mc2.svg"
+        alt="E = mc2_background_image"
+      />
+      <img
+        class="einstein einstein_after"
+        src="./images/Ienstein.svg"
+        alt="Ienstein_background_image"
+      />
+      <img
+        class="incline_plane incline_plane_after"
+        src="./images/inclined Plane.svg"
+        alt="inclined_plane_background_image"
+      />
+    </div>
+    <div class="add_question_paper_section">
+      <div class="heading">
+        <h1>Adding Question Section</h1>
+      </div>
+      <div class="fill_exam_details">
+        <form action="" id="add_ques_form">
+          <div class="row1">
+            <label for="topic_name">Topic Name</label>
+            <input
+              type="text"
+              id="topic_name"
+              name="topic_name"
+              spellcheck="false"
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div class="row2">
+            <div class="date_of_exam">
+              <label for="exam_date">Date of Exam</label>
+              <input
+                type="date"
+                id="exam_date"
+                name="exam_date"
+                spellcheck="false"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="duration">
+              <label for="exam_duration">Duration (hr)</label>
+              <input
+                type="number"
+                min="1"
+                max="24"
+                value="1"
+                id="exam_duration"
+                name="exam_duration"
+                spellcheck="false"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="exam_timing">
+              <label for="exam_timing">Duration</label>
+              <input
+                type="time"
+                id="exam_timing"
+                name="exam_timing"
+                spellcheck="false"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="no_of_questions">
+              <label for="total_questions">Total number of questions</label>
+              <input
+                type="number"
+                min="1"
+                id="totol_questions"
+                name="total_questions"
+                spellcheck="false"
+                autocomplete="off"
+                required
+              />
+            </div>
+          </div>
+          <div class="row3">
+            <div class="for_input">
+              <div class="question_col">
+                <label for="question">Question 1</label>
+                <textarea
+                  name="question"
+                  form="add_ques_form"
+                  wrap="soft"
+                  style="
+                    font-family: poppins;
+                    height: 100%;
+                    border: 1px solid #5f37ff;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 36px;
+                    padding-left: 10px;
+                  "
+                ></textarea>
+
+                <!-- <input
+                type="text"
+                id="question"
+                name="question"
+                spellcheck="false"
+                autocomplete="off"
+                required
+              /> -->
+              </div>
+              <div class="options_col">
+                <div class="first_option">
+                  <label for="option_1">(A)</label>
+                  <input
+                    type="text"
+                    id="option_1"
+                    name="option_1"
+                    spellcheck="false"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+                <div class="second_option">
+                  <label for="option_2">(B)</label>
+                  <input
+                    type="text"
+                    id="option_2"
+                    name="option_2"
+                    spellcheck="false"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+                <div class="third_option">
+                  <label for="option_3">(C)</label>
+                  <input
+                    type="text"
+                    id="option_3"
+                    name="option_3"
+                    spellcheck="false"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+                <div class="fourth_option">
+                  <label for="option_4">(D)</label>
+                  <input
+                    type="text"
+                    id="option_4"
+                    name="option_4"
+                    spellcheck="false"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="add_ques_btn">
+            <img src="./images/add_btn.svg" alt="Add Question" />
+          </div>
+        </form>
+      </div>
+      <div class="launch_question_paper_button">
+        <button class="publish_btn">Publish Questions</button>
+      </div>
+    </div>
+
+    <div class="published_overlay" id="overlay_question_paper_addition">
+      <div class="overlay_wrapper">
+        <img src="./images/checked.svg" alt="Done" />
+        <p>
+          Congratulation! Ma'am You have successfully published this questions
+          paper.
+        </p>
+        <a href="./mamLogin.html"
+          ><button class="big_button">Exams Section</button></a
+        >
+      </div>
+    </div>
+    <script>
+      let publishBtn = document.querySelector(".publish_btn");
+      let publishedOverlay = document.querySelector(
+        "#overlay_question_paper_addition"
+      );
+      publishBtn.addEventListener("click", function () {
+        publishedOverlay.classList.add("overlay");
+        publishedOverlay.classList.remove("published_overlay");
+      });
+    </script>
+    <script src="./app.js"></script>
+  </body>
+</html>

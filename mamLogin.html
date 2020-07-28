@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sky Physics</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="blobs">
+        <div class="purple_blob">
+          <img
+            src="./images/purpleblob.svg"
+            alt="top-left-background"
+            srcset=""
+          />
+        </div>
+        <div class="pink_blob">
+          <img
+            src="./images/pinkblob.svg"
+            alt="top-right-background"
+            srcset=""
+          />
+        </div>
+      </div>
+      <div class="links_section">
+        <div class="logo">
+          <img src="./images/sky_physics_logo.svg" alt="logo_svg" />
+        </div>
+        <div class="navlinks">
+          <div><a class="navlink" href="#">Home</a></div>
+          <div><a class="navlink" href="#">Exams</a></div>
+          <div><a class="navlink" href="./addquestions.html">Add Ques.</a></div>
+          <div class="person_after_login">
+            <a href="./student_details.html"
+              ><img src="./images/person.svg" alt="person_img"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="background">
+      <img
+        class="magnet magnet_after"
+        src="./images/Magnet.svg"
+        alt="magnet_background_image"
+      />
+      <img
+        class="pulley pulley_after"
+        src="./images/pulley.svg"
+        alt="pulley_background_image"
+      />
+      <img
+        class="emc2 emc2_after"
+        src="./images/E = mc2.svg"
+        alt="E = mc2_background_image"
+      />
+      <img
+        class="einstein einstein_after"
+        src="./images/Ienstein.svg"
+        alt="Ienstein_background_image"
+      />
+      <img
+        class="incline_plane incline_plane_after"
+        src="./images/inclined Plane.svg"
+        alt="inclined_plane_background_image"
+      />
+    </div>
+
+    <div class="exam_cards_section">
+      <div class="exam_card_wrapper">
+        <a href="./class_performance.html">
+          <div class="exam_card">
+            <div class="exam_topic">
+              <h1>Semi Conductor</h1>
+            </div>
+            <div class="exam_details">
+              <div class="exam_date">
+                <h2>Date</h2>
+                <p>22-06-2020</p>
+              </div>
+              <div class="exam_duration">
+                <h2>Duration</h2>
+                <p>3Hrs</p>
+              </div>
+              <div class="exam_max_marks">
+                <h2>Max Marks</h2>
+                <p>120</p>
+              </div>
+              <div class="exam_attendance">
+                <h2>Attendence</h2>
+                <p>40</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <div class="exam_controls">
+          <div class="serial_no"><p>1.</p></div>
+          <div class="question_paper">
+            <a href="answer_sheet.html"
+              ><img src="./images/question_paper_link.svg" alt="question_paper"
+            /></a>
+          </div>
+          <div class="delete_question_paper">
+            <img
+              src="./images/delete_question_paper.svg"
+              alt="delete_question_paper"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="exam_card_wrapper">
+        <div class="exam_card exam_card_2">
+          <div class="exam_topic">
+            <h1>Gravitation</h1>
+          </div>
+          <div class="exam_details">
+            <div class="exam_date">
+              <h2>Date</h2>
+              <p>24-06-2020</p>
+            </div>
+            <div class="exam_duration">
+              <h2>Duration</h2>
+              <p>2Hrs</p>
+            </div>
+            <div class="exam_max_marks">
+              <h2>Max Marks</h2>
+              <p>120</p>
+            </div>
+            <div class="exam_attendance">
+              <h2>Attendence</h2>
+              <p>55</p>
+            </div>
+          </div>
+        </div>
+        <div class="exam_controls">
+          <div class="serial_no"><p>2.</p></div>
+          <div class="question_paper">
+            <img src="./images/question_paper_link.svg" alt="question_paper" />
+          </div>
+          <div class="delete_question_paper">
+            <img
+              src="./images/delete_question_paper.svg"
+              alt="delete_question_paper"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="exam_card_wrapper">
+        <div class="exam_card exam_card_3">
+          <div class="exam_topic">
+            <h1>Electricity</h1>
+          </div>
+          <div class="exam_details">
+            <div class="exam_date">
+              <h2>Date</h2>
+              <p>24-06-2020</p>
+            </div>
+            <div class="exam_duration">
+              <h2>Duration</h2>
+              <p>2Hrs</p>
+            </div>
+            <div class="exam_max_marks">
+              <h2>Max Marks</h2>
+              <p>120</p>
+            </div>
+            <div class="exam_attendance">
+              <h2>Attendence</h2>
+              <p>55</p>
+            </div>
+          </div>
+        </div>
+        <div class="exam_controls">
+          <div class="serial_no"><p>3.</p></div>
+          <div class="question_paper">
+            <img src="./images/question_paper_link.svg" alt="question_paper" />
+          </div>
+          <div class="delete_question_paper">
+            <img
+              src="./images/delete_question_paper.svg"
+              alt="delete_question_paper"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="exam_card_wrapper">
+        <div class="exam_card exam_card_4">
+          <div class="exam_topic">
+            <h1>Electricity</h1>
+          </div>
+          <div class="exam_details">
+            <div class="exam_date">
+              <h2>Date</h2>
+              <p>24-06-2020</p>
+            </div>
+            <div class="exam_duration">
+              <h2>Duration</h2>
+              <p>2Hrs</p>
+            </div>
+            <div class="exam_max_marks">
+              <h2>Max Marks</h2>
+              <p>120</p>
+            </div>
+            <div class="exam_attendance">
+              <h2>Attendence</h2>
+              <p>55</p>
+            </div>
+          </div>
+        </div>
+        <div class="exam_controls">
+          <div class="serial_no"><p>4.</p></div>
+          <div class="question_paper">
+            <img src="./images/question_paper_link.svg" alt="question_paper" />
+          </div>
+          <div class="delete_question_paper">
+            <img
+              src="./images/delete_question_paper.svg"
+              alt="delete_question_paper"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="exam_card_wrapper">
+        <div class="exam_card exam_card_5">
+          <div class="exam_topic">
+            <h1>Electricity</h1>
+          </div>
+          <div class="exam_details">
+            <div class="exam_date">
+              <h2>Date</h2>
+              <p>24-06-2020</p>
+            </div>
+            <div class="exam_duration">
+              <h2>Duration</h2>
+              <p>2Hrs</p>
+            </div>
+            <div class="exam_max_marks">
+              <h2>Max Marks</h2>
+              <p>120</p>
+            </div>
+            <div class="exam_attendance">
+              <h2>Attendence</h2>
+              <p>55</p>
+            </div>
+          </div>
+        </div>
+        <div class="exam_controls">
+          <div class="serial_no"><p>5.</p></div>
+          <div class="question_paper">
+            <img src="./images/question_paper_link.svg" alt="question_paper" />
+          </div>
+          <div class="delete_question_paper">
+            <img
+              src="./images/delete_question_paper.svg"
+              alt="delete_question_paper"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="exam_card_wrapper">
+        <div class="exam_card exam_card_6">
+          <div class="exam_topic">
+            <h1>Electricity</h1>
+          </div>
+          <div class="exam_details">
+            <div class="exam_date">
+              <h2>Date</h2>
+              <p>24-06-2020</p>
+            </div>
+            <div class="exam_duration">
+              <h2>Duration</h2>
+              <p>2Hrs</p>
+            </div>
+            <div class="exam_max_marks">
+              <h2>Max Marks</h2>
+              <p>120</p>
+            </div>
+            <div class="exam_attendance">
+              <h2>Attendence</h2>
+              <p>55</p>
+            </div>
+          </div>
+        </div>
+        <div class="exam_controls">
+          <div class="serial_no"><p>6.</p></div>
+          <div class="question_paper">
+            <img src="./images/question_paper_link.svg" alt="question_paper" />
+          </div>
+          <div class="delete_question_paper">
+            <img
+              src="./images/delete_question_paper.svg"
+              alt="delete_question_paper"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="exam_card_wrapper">
+        <div class="exam_card exam_card_7">
+          <div class="exam_topic">
+            <h1>Thermal Conductivity of solid liquid and gases</h1>
+          </div>
+          <div class="exam_details">
+            <div class="exam_date">
+              <h2>Date</h2>
+              <p>24-06-2020</p>
+            </div>
+            <div class="exam_duration">
+              <h2>Duration</h2>
+              <p>2Hrs</p>
+            </div>
+            <div class="exam_max_marks">
+              <h2>Max Marks</h2>
+              <p>120</p>
+            </div>
+            <div class="exam_attendance">
+              <h2>Attendence</h2>
+              <p>55</p>
+            </div>
+          </div>
+        </div>
+        <div class="exam_controls">
+          <div class="serial_no"><p>7.</p></div>
+          <div class="question_paper">
+            <img src="./images/question_paper_link.svg" alt="question_paper" />
+          </div>
+          <div class="delete_question_paper">
+            <img
+              src="./images/delete_question_paper.svg"
+              alt="delete_question_paper"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

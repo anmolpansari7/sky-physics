@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sky Physics Registration</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="registration_top_container">
+      <div class="logo">
+        <a href="./index.html"
+          ><img src="./images/sky_physics_logo.svg" alt="logo_svg"
+        /></a>
+      </div>
+      <div class="top_button_part">
+        <p>Alredy registered ?</p>
+        <div>
+          <a href="login.html"><button class="create_btn">Log In</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="registration_bottom_container">
+      <div class="blueblob">
+        <img
+          class="registration_background"
+          src="./images/registration_blue_blob.svg"
+          alt="blue_blob_background"
+        />
+        <img
+          class="registration_illustration"
+          src="./images/registration_illustration.svg"
+          alt="registration_illustration"
+        />
+      </div>
+      <div class="registration_form">
+        <h1>Create Your Sky Physics Account</h1>
+        <div class="slide_part">
+          <div class="form_1">
+            <form>
+              <div class="student_name">
+                <label for="fname">Student's Name</label>
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  spellcheck="false"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+              <div class="parent_name">
+                <label for="parent_name">Parent's Name</label>
+                <input
+                  type="text"
+                  id="parent_name"
+                  name="parent_name"
+                  spellcheck="false"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+              <div class="school_name">
+                <label for="school_name">School Name</label>
+                <input
+                  type="text"
+                  id="school_name"
+                  name="school_name"
+                  spellcheck="false"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+
+              <div class="number_input">
+                <div class="date_of_birth">
+                  <label
+                    for="date_of_birth
+                  "
+                    >Date of Birth</label
+                  >
+                  <input
+                    type="date"
+                    id="date_of_birth"
+                    name="date_of_birth"
+                    min="2000-01-01"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+                <div class="standard">
+                  <label for="class">Class</label>
+                  <input
+                    type="number"
+                    id="class"
+                    name="class"
+                    min="10"
+                    max="13"
+                    value="11"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+              </div>
+            </form>
+            <div class="next_form_bar">
+              <div class="current_section">
+                <div>
+                  <img src="./images/form_part1.svg" alt="Part 1 of form" />
+                </div>
+                <div>
+                  <img src="./images/form_part_dot.svg" alt="form navigation" />
+                </div>
+              </div>
+              <div class="next_section_link">Next--></div>
+            </div>
+          </div>
+
+          <div class="form_2 form_1">
+            <form>
+              <div class="mobile_number">
+                <label for="mobile_number">Mobile Number</label>
+                <input
+                  type="tel"
+                  id="mobile_number"
+                  name="mobile_number"
+                  spellcheck="false"
+                  autocomplete="off"
+                  pattern="[0-9]{10}"
+                  required
+                />
+              </div>
+              <div class="email_id">
+                <label for="email">Email Id</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  spellcheck="false"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+              <div class="password">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  spellcheck="false"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+
+              <div class="confirm_password">
+                <div class="confirm_password">
+                  <label for="confirm_password">Confirm Password</label>
+                  <input
+                    type="password"
+                    id="confirm_password"
+                    name="confirm_password"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+              </div>
+            </form>
+            <div class="next_form_bar previous_form_bar">
+              <div class="previous_section_link"><--Prev</div>
+              <div class="current_section">
+                <div>
+                  <img src="./images/form_part_dot.svg" alt="Part 1 of form" />
+                </div>
+                <div>
+                  <img src="./images/form_part2.svg" alt="Part 2 of form" />
+                </div>
+              </div>
+              <div>
+                <a href="/registration_success.html"
+                  ><button class="create_btn">Create</button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="regis.js"></script>
+  </body>
+</html>
