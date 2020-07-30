@@ -168,6 +168,10 @@
   display: none;
 }
 
+.blob_section_for_mobile {
+  display: none;
+}
+
 /*****************BACKGROUND IMAGES*************************/
 .background {
   display: flex;
@@ -177,6 +181,7 @@
 .background img {
   width: 75px;
   opacity: 60%;
+  z-index: -1;
 }
 
 .magnet {
@@ -1457,7 +1462,7 @@ input[type="radio"] {
 
 /********************* FOR MOBILE PART ***************************/
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   /**************** MOBILE HEADER SECTION *******************/
 
   body {
@@ -1494,15 +1499,15 @@ input[type="radio"] {
   }
 
   .mobile_navbar {
-    display: initial;
-
+    all: unset;
     position: absolute;
+    width: 200%;
     left: -290px;
     top: -800px;
   }
 
   .logo_and_hamburger {
-    display: initial;
+    all: unset;
     width: 100%;
     background: black;
     z-index: 12;
@@ -1521,9 +1526,10 @@ input[type="radio"] {
   .main {
     display: flex;
     flex-direction: column-reverse;
-    position: absolute;
+    margin: 110% 0 0 0;
+    /* position: absolute;
     height: 600px;
-    top: 374px;
+    top: 374px; */
     justify-content: space-between;
   }
 
@@ -1552,6 +1558,8 @@ input[type="radio"] {
   .description {
     padding: 20px 10px 10px 10px;
     text-align: justify;
+    margin: 0 auto;
+    max-width: 313px;
   }
 
   .description p {
@@ -1570,6 +1578,7 @@ input[type="radio"] {
   .classes {
     all: unset;
     display: flex;
+    max-width: 250px;
     width: 75%;
     margin: 20px auto 20px auto;
     justify-content: space-between;
@@ -1579,7 +1588,7 @@ input[type="radio"] {
     width: 60.5px;
   }
 
-  .back_yellow_blob {
+  /* .back_yellow_blob {
     all: unset;
     width: 90%;
   }
@@ -1596,13 +1605,19 @@ input[type="radio"] {
     width: 63%;
     position: relative;
     top: -557px;
-  }
+  } */
 
   .big_center_blobs {
+    display: none;
+  }
+
+  .blob_section_for_mobile {
     all: unset;
     text-align: center;
-    height: 50%;
-    margin: 0 auto 0 auto;
+  }
+
+  .blob_section_for_mobile img {
+    width: 90%;
   }
 
   .footer_for_mobile_phone {
