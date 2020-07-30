@@ -1605,7 +1605,7 @@ input[type="radio"] {
     display: initial;
     text-align: center;
     position: relative;
-    bottom: -25%;
+    bottom: -20%;
     margin: 0 auto;
     transform: scale(1.15);
   }
