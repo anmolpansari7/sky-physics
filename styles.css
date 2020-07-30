@@ -73,6 +73,10 @@
   display: none;
 }
 
+.mobile_nav_links {
+  display: none;
+}
+
 /****************** MAIN SECTION ***************************/
 
 .main {
@@ -1504,6 +1508,11 @@ input[type="radio"] {
     width: 200%;
     left: -290px;
     top: -800px;
+    transition: transform 0.5s ease-in;
+  }
+
+  .active_mobile_navbar {
+    transform: translateY(45vh);
   }
 
   .logo_and_hamburger {
@@ -1517,6 +1526,8 @@ input[type="radio"] {
     position: absolute;
     right: 20px;
     top: 22px;
+    cursor: pointer;
+    z-index: 5;
   }
 
   .mobile_logo img {
@@ -1605,7 +1616,7 @@ input[type="radio"] {
     display: initial;
     text-align: center;
     position: relative;
-    bottom: -20%;
+    bottom: -17%;
     margin: 0 auto;
     transform: scale(1.15);
   }
@@ -1663,5 +1674,69 @@ input[type="radio"] {
     text-decoration: none;
     line-height: 12px;
     color: #000000;
+  }
+
+  .mobile_nav_links {
+    all: unset;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 50%;
+    padding: 25px 0 0 0;
+    /* background-color: lightcoral; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* 
+    animation: slide_in 700ms; */
+    opacity: 0;
+    transform: translateY(-5%);
+    transition: 300ms ease-in 300ms;
+  }
+
+  .mobile_nav_links a {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 17px;
+    font-feature-settings: "pnum" on, "lnum" on;
+
+    pointer-events: none;
+    color: #ffffff;
+  }
+
+  .nav_links_active {
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 2;
+    pointer-events: all;
+  }
+
+  .rect_1 {
+    transition: transform 500ms ease-in;
+  }
+
+  .rect_2 {
+    transition: transform 500ms ease-in;
+  }
+
+  .rect_3 {
+    transition: transform 500ms ease-in;
+  }
+
+  .rect_1_active {
+    transform: rotate(-45deg) translate(-19px, 18px);
+  }
+
+  .rect_2_active {
+    transform: rotate(45deg) translate(9px, -28px);
+  }
+
+  .rect_3_active {
+    transform: rotate(45%);
+    opacity: 0;
   }
 }
