@@ -1684,9 +1684,5 @@ input[type="radio"] {
     color: #000000;
   }
 
-  .mobile_bottom {
-    position: relative;
-    bottom: -20px;
-    left: 18px;
-  }
+
 }
