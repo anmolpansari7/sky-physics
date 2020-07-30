@@ -1559,7 +1559,7 @@ input[type="radio"] {
     padding: 20px 10px 10px 10px;
     text-align: justify;
     margin: 0 auto;
-    max-width: 313px;
+    max-width: 95%;
   }
 
   .description p {
@@ -1578,7 +1578,7 @@ input[type="radio"] {
   .classes {
     all: unset;
     display: flex;
-    max-width: 250px;
+    max-width: 95%;
     width: 75%;
     margin: 20px auto 20px auto;
     justify-content: space-between;
@@ -1624,7 +1624,7 @@ input[type="radio"] {
     display: initial;
     text-align: center;
     position: relative;
-    bottom: -100px;
+    bottom: -20%;
     margin: 0 auto;
     transform: scale(1.15);
   }
