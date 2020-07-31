@@ -1821,7 +1821,7 @@ input[type="radio"] {
 
   .next_section_link,
   .previous_section_link {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .create_btn {
