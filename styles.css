@@ -367,7 +367,7 @@
 .date_of_birth {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 55%;
 }
 
 .date_of_birth input {
@@ -1495,7 +1495,7 @@ input[type="radio"] {
     height: 49px;
     left: 21px;
     top: 15px;
-    z-index: 3;
+    z-index: 100;
   }
 
   .mobile_navbar {
@@ -1515,6 +1515,10 @@ input[type="radio"] {
     transform: translateY(45vh);
   }
 
+  .active_mobile_navbar_zindex {
+    z-index: 99;
+  }
+
   .logo_and_hamburger {
     all: unset;
     width: 100%;
@@ -1527,13 +1531,79 @@ input[type="radio"] {
     right: 20px;
     top: 22px;
     cursor: pointer;
-    z-index: 5;
+    z-index: 101;
   }
 
   .mobile_logo img {
     height: 49px;
     left: 21px;
   }
+
+  .mobile_nav_links {
+    all: unset;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 50%;
+    padding: 25px 0 0 0;
+    /* background-color: lightcoral; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* 
+    animation: slide_in 700ms; */
+    opacity: 0;
+    z-index: -1;
+    transform: translateY(-5%);
+    transition: 300ms ease-in 300ms;
+  }
+
+  .mobile_nav_links a {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 17px;
+    font-feature-settings: "pnum" on, "lnum" on;
+    pointer-events: none;
+    color: #ffffff;
+  }
+
+  .nav_links_active {
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 100;
+    pointer-events: all;
+  }
+
+  .rect_1 {
+    transition: transform 500ms ease-in;
+  }
+
+  .rect_2 {
+    transition: transform 500ms ease-in;
+  }
+
+  .rect_3 {
+    transition: transform 500ms ease-in;
+  }
+
+  .rect_1_active {
+    transform: rotate(-45deg) translate(-19px, 18px);
+  }
+
+  .rect_2_active {
+    transform: rotate(45deg) translate(9px, -28px);
+  }
+
+  .rect_3_active {
+    transform: rotate(45%);
+    opacity: 0;
+  }
+
+  /****************** HOME PAGE CONTENT (MAIN SECTION) FOR MOBILE *******************/
   .main {
     display: flex;
     flex-direction: column-reverse;
@@ -1676,67 +1746,81 @@ input[type="radio"] {
     color: #000000;
   }
 
-  .mobile_nav_links {
-    all: unset;
+  /*************** MOBILE REGISTRATION PAGE **********************/
+
+  .logo {
+    display: none;
+  }
+
+  .blueblob {
+    display: none;
+  }
+
+  .top_button_part {
+    right: 10px;
+    width: fit-content;
+    top: 95px;
+    font-size: 0.95rem;
+  }
+
+  .registration_bottom_container {
+    height: 100vh;
     width: 100%;
-    position: fixed;
-    top: 0;
-    height: 50%;
-    padding: 25px 0 0 0;
-    /* background-color: lightcoral; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    /* 
-    animation: slide_in 700ms; */
-    opacity: 0;
-    transform: translateY(-5%);
-    transition: 300ms ease-in 300ms;
+    padding: 100px 0 0 0;
   }
 
-  .mobile_nav_links a {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    letter-spacing: 1px;
-    font-size: 14px;
-    line-height: 17px;
-    font-feature-settings: "pnum" on, "lnum" on;
-
-    pointer-events: none;
-    color: #ffffff;
+  .registration_form {
+    all: unset;
+    margin-top: 50px;
+    width: 100%;
+    z-index: 5;
+    padding: 20px 10px 0 10px;
   }
 
-  .nav_links_active {
-    transform: translateY(0);
-    opacity: 1;
-    z-index: 2;
-    pointer-events: all;
+  .registration_form h1 {
+    font-size: 1.3rem;
+    line-height: 18px;
+    width: 100%;
+    margin: 0 auto;
   }
 
-  .rect_1 {
-    transition: transform 500ms ease-in;
+  .slide_part {
+    width: 95%;
   }
 
-  .rect_2 {
-    transition: transform 500ms ease-in;
+  .form_1 {
+    width: 100%;
   }
 
-  .rect_3 {
-    transition: transform 500ms ease-in;
+  .form_1 label {
+    font-size: 1rem;
+    line-height: 18px;
   }
 
-  .rect_1_active {
-    transform: rotate(-45deg) translate(-19px, 18px);
+  .form_1 input {
+    font-size: 0.95rem;
+    line-height: 36px;
+    padding-left: 5px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    width: 95vw;
+    height: 45px;
   }
 
-  .rect_2_active {
-    transform: rotate(45deg) translate(9px, -28px);
+  .date_of_birth input {
+    width: 100%;
   }
 
-  .rect_3_active {
-    transform: rotate(45%);
-    opacity: 0;
+  .current_section img {
+    width: 60%;
+  }
+
+  .next_section_link,
+  .previous_section_link {
+    font-size: 1rem;
+  }
+
+  .create_btn {
+    transform: scale(0.95);
   }
 }
