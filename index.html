@@ -105,10 +105,10 @@
       </div>
     </div>
     <div class="mobile_nav_links">
-      <div class="mob_nav_link"><a href="#">Home</a></div>
-      <div class="mob_nav_link"><a href="#">Exams</a></div>
-      <div class="mob_nav_link"><a href="#">Register</a></div>
-      <div class="mob_nav_link"><a href="#">Login</a></div>
+      <div class="mob_nav_link"><a href="index.html">Home</a></div>
+      <div class="mob_nav_link"><a href="login.html">Exams</a></div>
+      <div class="mob_nav_link"><a href="registeration.html">Register</a></div>
+      <div class="mob_nav_link"><a href="login.html">Login</a></div>
     </div>
     <div class="navbar">
       <div class="blobs">
@@ -246,33 +246,6 @@
         </div>
       </div>
     </div>
-    <script>
-      const hamburger = document.querySelector(".hamburger svg");
-      const mobileNavSlider = document.querySelector(".mobile_navbar");
-      const mobileNavLinks = document.querySelector(".mobile_nav_links");
-      const rectOne = document.querySelector(".rect_1");
-      const rectTwo = document.querySelector(".rect_2");
-      const rectThree = document.querySelector(".rect_3");
-      const body = document.querySelector("body");
-
-      hamburger.addEventListener("click", () => {
-        if (mobileNavSlider.classList.contains("active_mobile_navbar")) {
-          mobileNavLinks.classList.remove("nav_links_active");
-          body.style = "";
-          setTimeout(() => {
-            mobileNavSlider.classList.remove("active_mobile_navbar");
-          }, 300);
-        } else {
-          mobileNavSlider.classList.add("active_mobile_navbar");
-          mobileNavLinks.classList.add("nav_links_active");
-          body.style.overflow = "hidden";
-        }
-
-        rectOne.classList.toggle("rect_1_active");
-        rectTwo.classList.toggle("rect_2_active");
-        rectThree.classList.toggle("rect_3_active");
-      });
-    </script>
     <script src="app.js"></script>
   </body>
 </html>
