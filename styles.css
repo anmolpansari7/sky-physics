@@ -540,6 +540,10 @@ a {
   margin-top: 20px;
 }
 
+.mob_login_top_image {
+  display: none;
+}
+
 /******************* AFTER lOGIN MA'AM SECTION *******************/
 
 .magnet_after {
@@ -1835,15 +1839,78 @@ input[type="radio"] {
     width: 40%;
   }
 
+  .success_speach {
+    text-align: center;
+  }
+
   .success_speach p {
     font-size: 1.15rem;
   }
 
   .big_button {
     height: 50px;
+    width: 90%;
     line-height: unset;
     margin: 20px 0 0 0;
     font-size: 1.5rem;
     border-radius: 5px;
+  }
+
+  /************** MOBILE LOG IN PAGE ******************/
+
+  .profile_illustration {
+    display: none;
+  }
+
+  .mobile_login_background {
+    transform: rotate(130.15deg);
+    left: 219px;
+    top: -1763px;
+  }
+
+  .mobile_login_background svg {
+    display: block;
+  }
+
+  .login_form {
+    margin-top: 60%;
+    /* background-color: #ff2c78; */
+  }
+
+  .login_form_top_btn_part {
+    margin-top: 60%;
+    z-index: 98;
+  }
+
+  .login_form label {
+    font-size: 0.8rem;
+    line-height: 18px;
+  }
+
+  .login_form input {
+    font-size: 0.95rem;
+    line-height: 36px;
+    padding-left: 5px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    width: 95vw;
+    height: 45px;
+  }
+
+  .login_form button {
+    text-align: center;
+    transform: translate(6%, 41%);
+  }
+
+  .mob_login_top_image {
+    all: unset;
+    z-index: 5;
+  }
+
+  .mob_login_top_image img {
+    width: 65vw;
+    position: absolute;
+    top: 68px;
+    right: 74px;
   }
 }
