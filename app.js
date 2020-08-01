@@ -71,8 +71,7 @@ ExamCardWrapper.addEventListener("touchstart", () => {
 });
 
 ExamCardWrapper.addEventListener("touchend", () => {
-  ExamCardWrapper.addEventListener("touchstart", () => {
-    ExamCardWrapper.forEach((card) => {
-      card.classList.remove("touched_exam_card");
-    });
+  ExamCardWrapper.forEach((card) => {
+    card.classList.remove("touched_exam_card");
+  });
 });
