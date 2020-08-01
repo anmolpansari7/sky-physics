@@ -1914,3 +1914,13 @@ input[type="radio"] {
     right: 74px;
   }
 }
+
+/****************** MOBILE AFTER MA'AM LOGIN *****************************/
+
+.exam_cards_section {
+  all: unset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px 0 0 0;
+}
