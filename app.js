@@ -64,7 +64,7 @@ hamburger.addEventListener("click", () => {
 
 let ExamCardWrapper = document.querySelectorAll(".exam_card_wrapper");
 
-ExamCardWrapper.addEventListener("touchmove", () => {
+ExamCardWrapper.addEventListener("touchstart", () => {
   ExamCardWrapper.forEach((card) => {
     card.classList.add("touched_exam_card");
   });
