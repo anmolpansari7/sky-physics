@@ -1913,14 +1913,20 @@ input[type="radio"] {
     top: 68px;
     right: 74px;
   }
-}
 
-/****************** MOBILE AFTER MA'AM LOGIN *****************************/
+  /****************** MOBILE AFTER MA'AM LOGIN *****************************/
 
-.exam_cards_section {
-  all: unset;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 100px 0 0 0;
+  .exam_cards_section {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+  }
+
+  .touched_exam_card {
+    transform: scale(1);
+  }
 }

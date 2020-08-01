@@ -61,3 +61,9 @@ hamburger.addEventListener("click", () => {
   rectTwo.classList.toggle("rect_2_active");
   rectThree.classList.toggle("rect_3_active");
 });
+
+let ExamCardWrapper = document.querySelectorAll(".exam_card_wrapper");
+
+ExamCardWrapper.addEventListener("touchmove", () => {
+  ExamCardWrapper.classList.toggle("touched_exam_card");
+});
