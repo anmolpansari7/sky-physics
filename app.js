@@ -64,14 +64,14 @@ hamburger.addEventListener("click", () => {
 
 let ExamCardWrapper = document.querySelectorAll(".exam_card_wrapper");
 
-ExamCardWrapper.addEventListener("touchstart", () => {
-  ExamCardWrapper.forEach((card) => {
+ExamCardWrapper.forEach((card) => {
+  card.addEventListener("touchstart", () => {
     card.classList.add("touched_exam_card");
   });
 });
 
-ExamCardWrapper.addEventListener("touchend", () => {
-  ExamCardWrapper.forEach((card) => {
+ExamCardWrapper.forEach((card) => {
+  card.addEventListener("touchstart", () => {
     card.classList.remove("touched_exam_card");
   });
 });
