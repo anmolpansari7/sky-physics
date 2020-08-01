@@ -1945,4 +1945,10 @@ input[type="radio"] {
   .negative_zindex {
     z-index: -1;
   }
+
+  .exam_card_wrapper {
+    transform: scale(0.95);
+    transition: 300ms ease-in-out;
+    margin: 20px 0 20px 0;
+  }
 }
