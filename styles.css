@@ -1929,4 +1929,20 @@ input[type="radio"] {
   .touched_exam_card {
     transform: scale(1);
   }
+
+  .exam_card_wrapper:hover {
+    all: unset;
+  }
+
+  .fixed_position {
+    position: fixed;
+  }
+
+  .large_zindex {
+    z-index: 101;
+  }
+
+  .negative_zindex {
+    z-index: -1;
+  }
 }
