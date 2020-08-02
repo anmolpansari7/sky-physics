@@ -2064,4 +2064,52 @@ input[type="radio"] {
   .minus_two_z_index {
     z-index: -2;
   }
+
+  /***************** MOBILE CLASS PERFORMANCE *********************/
+
+  .class_performance_list {
+    margin: 100px 0 0 0;
+    width: 100%;
+  }
+
+  .selected_exam_topic {
+    margin-bottom: 35px;
+  }
+
+  .selected_exam_topic h1 {
+    font-size: 1.2rem;
+    text-decoration: underline;
+  }
+
+  .selected_exam_topic p {
+    font-size: 0.8rem;
+  }
+
+  .table_header {
+    width: 100%;
+  }
+
+  .students_rank_list {
+    width: 100%;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    justify-content: space-between;
+  }
+
+  .s_no {
+    all: unset;
+    width: 9%;
+    padding-left: 10px;
+  }
+
+  .name_in_list {
+    all: unset;
+    width: 60%;
+    padding: 0 10px 0 10px;
+  }
+
+  .marks_scored {
+    all: unset;
+    padding: 0 10px 0 10px;
+  }
 }
