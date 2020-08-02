@@ -2085,20 +2085,21 @@ input[type="radio"] {
     font-size: 0.8rem;
   }
 
-  .table_header {
+  .table_header .students_rank_list {
     width: 100%;
+    font-size: 0.7rem;
   }
 
   .students_rank_list {
     width: 100%;
     border-radius: 8px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     justify-content: space-between;
   }
 
   .s_no {
     all: unset;
-    width: 9%;
+    width: 10%;
     padding-left: 10px;
   }
 
