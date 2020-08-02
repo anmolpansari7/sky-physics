@@ -2190,10 +2190,6 @@ input[type="radio"] {
     margin: 10px 0;
   }
 
-  .result {
-    /* transform: scale(0.9); */
-  }
-
   .question_s_no {
     width: 50px;
     height: 25px;
@@ -2221,5 +2217,65 @@ input[type="radio"] {
 
   .mobile_bottom_for_report_card img {
     width: 100%;
+  }
+
+  /************** MOBILE ADD QUESTIONS PART **********************/
+
+  .add_question_paper_section {
+    width: 100%;
+    margin: 170px auto 50px auto;
+    background-color: burlywood;
+    z-index: 110;
+  }
+
+  .heading h1 {
+    font-size: 24px;
+  }
+
+  .fill_exam_details {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .fill_exam_details input {
+    font-size: 0.95rem;
+    line-height: 36px;
+    padding-left: 5px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    width: 95vw;
+    height: 45px;
+  }
+
+  .fill_exam_details label {
+    font-size: 0.8rem;
+    line-height: 18px;
+  }
+
+  .row1 input {
+    width: 100%;
+    margin: 0 5px 0 0;
+  }
+
+  .row2 {
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .row2 input {
+    font-size: 18px;
+    margin: 0 5px 0 0;
+  }
+
+  .row2 div {
+    margin-top: 20px;
+  }
+
+  .for_input {
+    flex-direction: column;
+  }
+
+  .question_col textarea {
+    width: 95vw;
   }
 }
