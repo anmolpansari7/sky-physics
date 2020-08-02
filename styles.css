@@ -2090,9 +2090,14 @@ input[type="radio"] {
     font-size: 0.7rem;
   }
 
+  .table_header_height {
+    align-items: center;
+    height: 50px;
+    border-radius: 0px;
+  }
+
   .students_rank_list {
     width: 100%;
-    border-radius: 8px;
     font-size: 1rem;
     justify-content: space-between;
   }
@@ -2105,7 +2110,7 @@ input[type="radio"] {
 
   .name_in_list {
     all: unset;
-    width: 60%;
+    min-width: 60%;
     padding: 0 10px 0 10px;
   }
 
