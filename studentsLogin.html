@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=0"
+    />
     <title>Sky Physics</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
@@ -21,6 +24,96 @@
     />
   </head>
   <body>
+    <div class="mobile_navbar fixed_position">
+      <svg
+        class="success_nav_mobile"
+        width="1062"
+        height="1075"
+        viewBox="0 0 1062 1075"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M717.005 867.303C648.143 899.416 576.096 868.216 503.434 868.685C431.846 869.147 356.254 900.217 293.02 870.042C226.097 838.107 178.984 772.799 150.825 700.423C122.273 627.039 107.931 541.367 134.18 461.787C159.389 385.359 236.523 344.887 288.296 283.647C340.899 221.424 367.917 125.155 440.942 98.9288C513.988 72.6949 582.798 125.441 650.651 153.51C712.662 179.162 782.727 197.222 819.449 255.507C855.308 312.423 833.79 391.791 844.527 461.232C856.657 539.685 911.323 611.355 886.629 689.991C861.446 770.18 790.07 833.232 717.005 867.303Z"
+          fill="#7545FF"
+        />
+        <path
+          d="M717.005 867.303C648.143 899.416 576.096 868.216 503.434 868.685C431.846 869.147 356.254 900.217 293.02 870.042C226.097 838.107 178.984 772.799 150.825 700.423C122.273 627.039 107.931 541.367 134.18 461.787C159.389 385.359 236.523 344.887 288.296 283.647C340.899 221.424 367.917 125.155 440.942 98.9288C513.988 72.6949 582.798 125.441 650.651 153.51C712.662 179.162 782.727 197.222 819.449 255.507C855.308 312.423 833.79 391.791 844.527 461.232C856.657 539.685 911.323 611.355 886.629 689.991C861.446 770.18 790.07 833.232 717.005 867.303Z"
+          fill="url(#paint0_linear)"
+        />
+        <defs>
+          <linearGradient
+            id="paint0_linear"
+            x1="419.362"
+            y1="439.729"
+            x2="464.798"
+            y2="923.325"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#C13DFF" />
+            <stop offset="1" stop-color="white" stop-opacity="0" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+    <div class="logo_and_hamburger fixed_position large_zindex">
+      <div class="mobile_logo fixed_position large_zindex">
+        <img src="./images/sky_physics_logo.svg" alt="Sky Physics Logo" />
+      </div>
+      <div class="hamburger fixed_position large_zindex">
+        <svg
+          class="large_zindex"
+          width="37"
+          height="37"
+          viewBox="0 0 37 37"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            class="rect_1"
+            x="10.6367"
+            y="7.97632"
+            width="15.9521"
+            height="2.45417"
+            rx="1.22708"
+            fill="white"
+          />
+          <rect
+            class="rect_2"
+            x="10.6367"
+            y="26.5865"
+            width="15.9521"
+            height="2.45417"
+            rx="1.22708"
+            fill="white"
+          />
+          <rect
+            class="rect_3"
+            x="7.08887"
+            y="16.6169"
+            width="23.9281"
+            height="3.68125"
+            rx="1.84063"
+            fill="white"
+          />
+          <circle
+            cx="18.5"
+            cy="18.5"
+            r="17.7246"
+            stroke="white"
+            stroke-width="1.5509"
+          />
+        </svg>
+      </div>
+    </div>
+    <div class="mobile_nav_links fixed_position large">
+      <div class="mob_nav_link"><a href="./home.html">Home</a></div>
+      <div class="mob_nav_link"><a href="./studentsLogin.html">Exams</a></div>
+      <div class="mob_nav_link">
+        <a href="./Exam_paper.html">New Exam</a>
+      </div>
+      <div class="mob_nav_link"><a href="./index.html">Log Out</a></div>
+    </div>
     <div class="navbar">
       <div class="blobs">
         <div class="purple_blob">
@@ -43,9 +136,11 @@
           <img src="./images/sky_physics_logo.svg" alt="logo_svg" />
         </div>
         <div class="navlinks">
-          <div><a class="navlink" href="#">Home</a></div>
-          <div><a class="navlink" href="#">Exams</a></div>
-          <div><a class="navlink" href="#">Add Ques.</a></div>
+          <div><a class="navlink" href="./home_student_view.html">Home</a></div>
+          <div><a class="navlink" href="./studentsLogin.html">Exams</a></div>
+          <div><a class="navlink" href="./Exam_paper.html">New Exam</a></div>
+          <div><a class="navlink" href="./index.html">Log Out</a></div>
+
           <div class="person_after_login">
             <img src="./images/person.svg" alt="person_img" />
           </div>
@@ -78,14 +173,15 @@
         src="./images/inclined Plane.svg"
         alt="inclined_plane_background_image"
       />
-      <div class="new_exam_button">
-        <a href="./Exam_paper.html"> <button class="create_btn">New</button></a>
-      </div>
     </div>
 
-    <div class="exam_cards_section student_login_card_section">
+    <div class="Exams_head">
+      <h1>Exams</h1>
+    </div>
+
+    <div class="exam_cards_section student_login_card_section negative_zindex">
       <div class="exam_card_wrapper">
-        <a href="./class_performance.html">
+        <a href="./report_card_student_view.html">
           <div class="exam_card">
             <div class="exam_topic">
               <h1>Semi Conductor</h1>
@@ -113,11 +209,11 @@
         <div class="exam_controls">
           <div class="serial_no"><p>1.</p></div>
           <div class="question_paper">
-            <a href="answer_sheet.html"
+            <a href="answer_sheet_student_view.html"
               ><img src="./images/question_paper_link.svg" alt="question_paper"
             /></a>
           </div>
-          <a href="./class_performance.html">
+          <a href="./class_performance_student_view.html">
             <div class="your_class_rank_list">
               <img src="./images/list_icon.svg" alt="class_rank_list" /></div
           ></a>
